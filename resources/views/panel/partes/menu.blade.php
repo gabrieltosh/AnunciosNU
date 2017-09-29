@@ -4,7 +4,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="{{asset('../imagenes')}}" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"></h5>
+              	  <h5 class="centered">{{Auth::user()->nombre}}</h5>
               	  	
                   <li class="mt">
                       <a class="active" href="">

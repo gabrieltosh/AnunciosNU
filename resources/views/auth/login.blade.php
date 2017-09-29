@@ -4,12 +4,12 @@
 
 <div id="login-page">
         <div class="container">
-            {!! Form::open(['class'=>'form-login','method'=>'POST']) !!}
+            {!! Form::open(['route'=>'log','class'=>'form-login','method'=>'POST']) !!}
              {{ csrf_field() }}
                 <h2 class="form-login-heading"> Inicia Sesion </h2>
                 <div class="login-wrap">
                     {!!Form::email('email',null,['class'=>'form-control','placeholder'=>'Email'])!!}
-                    
+                        
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                      @if ($errors->has('email'))
                           <span class="help-block">
